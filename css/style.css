@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
+body{
+  overflow-x:  hidden;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Times New Roman', Times, serif;
+  /* color: #505962; */
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDhhnG1zfVV95BN5PDoZL_O7urJfz1yAy_BDvE2aMF8Lit2yUY&usqp=CAU);
+}
+
+
+
+.services{
+    color: white;
+    font-weight: bold;
+  font: outline;
+}
+.first{
+  color: #f1f1f1;
+  font-family: 'Times New Roman', Times, serif;
+}
+.last{
+  color: rgb(141, 19, 86);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font: outline;
+}
+
+.servicecard{
+    border-radius: 5px;
+  
+  overflow: hidden; 
+    
+  transition: all .5s ease;
+
+
+
+}
+.servicecard:hover{
+    
+        z-index:1111;
+        transform:perspective(2000px) rotate(-10deg);
+        box-shadow:inset 20px 0 50px rgba(0,0,0,0.5);
+     
+}
+.logo{
+  text-align: center;
+  
+}
+.main-about-body{
+ background-color: #5bc0de ;
+ 
+}
+
+.bb{
+  color: white;
+}
+
+ .testimonial{
+  background-image: url(https://i1.wp.com/www.thenewgait.com/wp-content/uploads/2019/08/Testimonial-Background.jpg?fit=1500%2C841&ssl=1);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-size: cover;
+  height: auto;
+  /* background-color: #5bc0de; */
+} */
+
+
+
+
+
+
+
+
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+  /* padding-top: 20%; */
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  /* Hide the right column on small screens */
+  .right {
+    display: none;
+  }
+}
+hr{ 
+  height: 1px;
+  color: white;
+  background-color: white;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect:hover .overlay {
+  background-color: rgba(170,170,170,0.4);
+}
+
+.hovereffect h2, .hovereffect img {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+    width: 100%;
+
+
+}
+
+.hovereffect:hover img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: normal;
+  height: 85%;
+  width: 85%;
+  position: absolute;
+  top: -20%;
+  left: 8%;
+  padding: 70px;
+}
+
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  background-color: rgba(0,0,0,0.4);
+}
+
+
+
+.upcoming li{
+
+  list-style: none;
+}
+.upcoming marquee{
+
+height: 230px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
